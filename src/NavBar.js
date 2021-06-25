@@ -7,8 +7,8 @@ const NavBar = () => {
     return ( 
         <div>
             <ul>
-                {navlinks.map(navlink => (
-                    <li>{ navlink.nav }</li>
+                {navlinks.map(chinna => (
+                    <li>{ chinna.nav }</li>
                 ))}
             </ul>
         </div>
