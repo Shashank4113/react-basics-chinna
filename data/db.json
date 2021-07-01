@@ -1,0 +1,18 @@
+{
+    "products": [
+        {
+           "name": "i Phone 12 Pro Max",
+           "price": 142000,
+           "category": "Smart Phones",
+           "Specs": "12 GB Ram, 256 Rom",
+           "id": 1
+        },
+        {
+            "name": "Mac book pro M1",
+            "price": 136000,
+            "category": "Laptops",
+            "Specs": "8 GB Ram, 256 Rom",
+            "id": 2
+        }
+    ]
+}
