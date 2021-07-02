@@ -1,14 +1,28 @@
-import NavBar from './NavBar';
-import Footer from './Footer';
-import Home from './Home';
+import Dashboard from './components/Dashboard';
+import Signin from './components/Signin';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
 function App() {
   return (
-    <div>
-        <NavBar /><hr />
-        <Home /><hr />
-        <Footer />
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/">
+          <Dashboard />
+        </Route>
+        <Route path="/signin">
+          <Signin />
+        </Route>
+        <Route path="/signup">
+         {/* signup */}
+        </Route>
+        <Route path="/products">
+         {/* products */}
+        </Route>
+        <Route path="/contact">
+         {/* contact */}
+        </Route>
+      </Switch>
+    </BrowserRouter>
   );
 }
 
