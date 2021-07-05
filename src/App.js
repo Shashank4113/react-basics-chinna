@@ -1,5 +1,6 @@
 import Dashboard from './components/Dashboard';
 import Signin from './components/Signin';
+import Add from './components/Add';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
 function App() {
@@ -20,6 +21,9 @@ function App() {
         </Route>
         <Route path="/contact">
          {/* contact */}
+        </Route>
+        <Route path="/addProduct">
+          <Add />
         </Route>
       </Switch>
     </BrowserRouter>

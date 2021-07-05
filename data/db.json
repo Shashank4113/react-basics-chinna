@@ -1,18 +1,46 @@
 {
-    "products": [
-        {
-           "name": "i Phone 12 Pro Max",
-           "price": 142000,
-           "category": "Smart Phones",
-           "Specs": "12 GB Ram, 256 Rom",
-           "id": 1
-        },
-        {
-            "name": "Mac book pro M1",
-            "price": 136000,
-            "category": "Laptops",
-            "Specs": "8 GB Ram, 256 Rom",
-            "id": 2
-        }
-    ]
+  "products": [
+    {
+      "name": "i Phone 12 Pro Max",
+      "price": 142000,
+      "category": "Smart Phones",
+      "Specs": "12 GB Ram, 256 Rom",
+      "id": 1
+    },
+    {
+      "name": "Mac book pro M1",
+      "price": 136000,
+      "category": "Laptops",
+      "Specs": "8 GB Ram, 256 Rom",
+      "id": 2
+    },
+    {
+      "name": "One plus 9R",
+      "price": "50000",
+      "category": "Smart Phones",
+      "Specs": "256 ROM, 12 RAM",
+      "id": 3
+    },
+    {
+      "name": "One Plus 8 Pro",
+      "price": "49000",
+      "category": "Smart Phones",
+      "specs": "256 ROM, 12 RAM",
+      "id": 4
+    },
+    {
+      "name": "Asus Gen 4 ",
+      "price": "63000",
+      "category": "Laptop",
+      "specs": "Graphic Card Nvidea 4 GB",
+      "id": 5
+    },
+    {
+      "name": "xxxxxx",
+      "price": "xxxxxx",
+      "category": "xxxxx",
+      "specs": "xxxxx",
+      "id": 6
+    }
+  ]
 }
