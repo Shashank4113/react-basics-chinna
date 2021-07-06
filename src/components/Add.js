@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+
 
 const Add = () => {
 
@@ -7,7 +7,6 @@ const Add = () => {
     const [price, setPrice] = useState('');
     const [category, setCategory] = useState('');
     const [specs, setSpecs] = useState('');   
-    const history = useHistory(); 
 
     const handle = (e) => {
         e.preventDefault();
@@ -19,7 +18,6 @@ const Add = () => {
             body: JSON.stringify(data)
         }).then(() => {
             console.log('New product added successfully !!');
-            history.push('/signin');
         })
     }
 

@@ -1,6 +1,8 @@
 import Dashboard from './components/Dashboard';
 import Signin from './components/Signin';
 import Add from './components/Add';
+import Products from './components/Products';
+import Product from './components/Product';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
 function App() {
@@ -17,7 +19,7 @@ function App() {
          {/* signup */}
         </Route>
         <Route path="/products">
-         {/* products */}
+         <Products />
         </Route>
         <Route path="/contact">
          {/* contact */}
@@ -25,6 +27,9 @@ function App() {
         <Route path="/addProduct">
           <Add />
         </Route>
+        <Route path="/product/:id">
+          <Product />
+        </Route> 
       </Switch>
     </BrowserRouter>
   );
