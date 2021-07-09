@@ -5,6 +5,7 @@ import Products from './components/Products';
 import Product from './components/Product';
 import NavBar from './components/NavBar';
 import NotFound from './components/NotFound';
+import Contact from './components/Contact';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
          <Products />
         </Route>
         <Route path="/contact">
-         {/* contact */}
+         <Contact />
         </Route>
         <Route path="/addProduct">
           <NavBar />
