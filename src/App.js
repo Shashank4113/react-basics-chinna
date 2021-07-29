@@ -6,6 +6,8 @@ import Product from './components/Product';
 import NavBar from './components/NavBar';
 import NotFound from './components/NotFound';
 import Contact from './components/Contact';
+import Bikes from './components/Bikes';
+import { BookProvider } from './BookContext';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
 function App() {
@@ -13,8 +15,10 @@ function App() {
     <BrowserRouter>
       <Switch>
         <Route exact path="/">
-          <NavBar />
-          <Dashboard />
+          <BookProvider>
+            <NavBar />
+            <Dashboard />
+          </BookProvider>
         </Route>
         <Route path="/signin">
           <NavBar />
@@ -28,6 +32,7 @@ function App() {
          <Products />
         </Route>
         <Route path="/contact">
+        <NavBar />
          <Contact />
         </Route>
         <Route path="/addProduct">
@@ -38,6 +43,10 @@ function App() {
           <NavBar />
           <Product />
         </Route> 
+        <Route path="/bikes">
+          <NavBar />
+          <Bikes />
+        </Route>
         <Route path="*">
           <NotFound />
         </Route>

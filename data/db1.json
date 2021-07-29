@@ -1,0 +1,32 @@
+{
+    "bikes": [
+        {
+            "chasisno": "A1B2C3",
+            "model": "Classic",
+            "price": "100$",
+            "url": "royal-1.jpeg",
+            "id": 1
+        },
+        {
+            "chasisno": "A1B2C3D4",
+            "model": "Himalayan",
+            "price": "400$",
+            "url": "royal-2.jpeg",
+            "id": 2
+        },
+        {
+            "chasisno": "A1B2C3D4E5",
+            "model": "Continental GT",
+            "price": "300$",
+            "url": "royal-3.jpeg",
+            "id": 3
+        },
+        {
+            "chasisno": "A1B2C3D4E5F6",
+            "model": "Modified RE",
+            "price": "200$",
+            "url": "royal-4.jpeg",
+            "id": 4
+        }
+    ]
+}
