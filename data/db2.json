@@ -1,0 +1,16 @@
+{
+  "queries": [
+    {
+      "email": "test@gmail.com",
+      "mobile": 9999999999,
+      "description": "Unable to see the products .",
+      "id": 1
+    },
+    {
+      "email": "seethudhoni@gmail.com",
+      "mobile": "8888888888",
+      "description": "Need to update the signup page .",
+      "id": 2
+    }
+  ]
+}

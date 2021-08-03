@@ -5,7 +5,14 @@ const Contact = () => {
     const { register, handleSubmit, errors } = useForm();
 
     const Chinna = (data) => {
-        console.log(data)
+
+        fetch('http://localhost:3333/queries', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json'},
+            body: JSON.stringify(data)
+        }).then(() => {
+            console.log('New Query added successfully !!');
+        })
     }
 
     return ( 

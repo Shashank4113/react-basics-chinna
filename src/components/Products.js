@@ -7,7 +7,7 @@ const Products = () => {
     const [isLoading,setIsLoading] = useState(true);
 
     useEffect(() => {
-        fetch('http://localhost:1234/products')
+        fetch('http://localhost:1111/products')
         .then(res => {
             return res.json()
         }).then(data => {

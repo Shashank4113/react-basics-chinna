@@ -1,6 +1,11 @@
 import { Link } from  'react-router-dom';
+import React, { useContext } from 'react';
+import { BookContext } from '../BookContext';
 
 const NavBar = () => {
+
+    const [books] = useContext(BookContext);
+
     return ( 
         <div>
             <ul style={{ display: 'inline'}}>
@@ -11,6 +16,7 @@ const NavBar = () => {
                 <Link to="/signup" style={{ textDecoration: 'None',padding: 10}}><li style={{ display: 'inline'}}>Sign Up</li></Link>
                 <Link to="/contact" style={{ textDecoration: 'None',padding: 10}}><li style={{ display: 'inline'}}>Contact</li></Link>
                 <Link to="/bikes" style={{ textDecoration: 'None',padding: 10}}><li style={{ display: 'inline'}}>Bikes</li></Link> 
+                <li><p>Available books are : { books.length } </p></li>
             </ul>
         </div>
      );

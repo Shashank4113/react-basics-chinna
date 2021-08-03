@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-
 const Add = () => {
 
     const [name, setName] = useState('');
@@ -12,7 +11,7 @@ const Add = () => {
         e.preventDefault();
         const data = {name, price, category, specs}
 
-        fetch('http://localhost:1234/products', {
+        fetch('http://localhost:1111/products', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json'},
             body: JSON.stringify(data)
